@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="detail-view">
+    <div class="back-link">
+        <a href="{{ url_for('home') }}">← Volver a mi Bitácora</a>
+    </div>
+
+    <h1>Detalle del Descubrimiento</h1>
+
+    <div class="comparison-grid">
+        <!-- User Contribution -->
+        <article class="user-entry">
+            <h3>Tu Dibujo</h3>
+            <div class="drawing-frame">
+                <img src="{{ url_for('static', filename='uploads/' + entry.user_image_path) }}"
+                    alt="Dibujo del usuario">
+            </div>
+            <div class="user-notes">
+                <h4>Notas de Exploración:</h4>
+                <p>{{ entry.notes }}</p>
+            </div>
+        </article>
+
+        <!-- System Reference -->
+        <article class="species-reference">
+            <h3>Referencia: {{ entry.species.name }}</h3>
+            <div class="reference-image">
+                <img src="{{ entry.species.image_url }}" alt="{{ entry.species.name }}">
+            </div>
+            <div class="species-info">
+                <span class="scientific-name">{{ entry.species.scientific_name }}</span>
+                <p>{{ entry.species.description }}</p>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock %}

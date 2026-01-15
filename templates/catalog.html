@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="catalog-header">
+    <h1>Catálogo de Especies</h1>
+    <p>Conoce los árboles que puedes encontrar en tu aventura</p>
+</section>
+
+<section class="tree-grid">
+    {% for tree in species %}
+    <article class="tree-card">
+        <div class="card-image">
+            <img src="{{ tree.image_url }}" alt="{{ tree.name }}" loading="lazy">
+        </div>
+        <div class="card-content">
+            <span class="scientific-name">{{ tree.scientific_name }}</span>
+            <h2>{{ tree.name }}</h2>
+            <p>{{ tree.description }}</p>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

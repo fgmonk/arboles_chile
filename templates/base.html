@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Árboles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <a href="{{ url_for('home') }}" class="logo">🌿 Bitácora</a>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Mis Descubrimientos</a></li>
+                <li><a href="{{ url_for('catalog') }}">Catálogo</a></li>
+                <li><a href="{{ url_for('log_discovery') }}" class="btn-sm">Nuevo Hallazgo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Explorando la naturaleza chilena con papá y mi hijo</p>
+        </div>
+    </footer>
+</body>
+
+</html>

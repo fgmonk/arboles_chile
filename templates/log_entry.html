@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="form-container">
+    <h1>Nueva Entrada en la Bitácora</h1>
+    <p>Registra tu hallazgo explorador</p>
+    
+    <form method="POST" enctype="multipart/form-data" class="exploration-form">
+        <div class="form-group">
+            <label for="species_id">¿Qué árbol encontraste?</label>
+            <select name="species_id" id="species_id" required>
+                <option value="" disabled selected>Selecciona una especie...</option>
+                {% for tree in species %}
+                <option value="{{ tree.id }}">{{ tree.name }} ({{ tree.scientific_name }})</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Tu Dibujo del Árbol</label>
+            <input type="file" name="file" id="file" accept="image/*" required>
+            <small>Sube una foto de tu dibujo (.jpg, .png)</small>
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Notas de la Exploración</label>
+            <textarea name="notes" id="notes" rows="4" placeholder="¿Dónde lo viste? ¿Qué te llamó la atención?"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Guardar Descubrimiento</button>
+    </form>
+</section>
+{% endblock %}
