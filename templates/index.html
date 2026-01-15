@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árboles Nativos de Chile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Árboles de Chile</h1>
+            <p class="subtitle">Descubre la majestuosidad de nuestra flora nativa</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tree-grid">
+            {% for tree in trees %}
+            <article class="tree-card">
+                <div class="card-image">
+                    <img src="{{ tree.image_url }}" alt="{{ tree.name }}" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <span class="scientific-name">{{ tree.scientific_name }}</span>
+                    <h2>{{ tree.name }}</h2>
+                    <p>{{ tree.description }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Creado con 🍃 y Python</p>
+        </div>
+    </footer>
+</body>
+</html>
