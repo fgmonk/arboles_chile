@@ -1,37 +1,22 @@
-trees = [
-    {
-        "id": 1,
-        "name": "Araucaria",
-        "scientific_name": "Araucaria araucana",
-        "description": "Conocida como pehuén, es una especie arbórea perenne capaz de crecer hasta 50 m de altura. Es considerada Monumento Natural en Chile.",
-        "image_url": "https://images.unsplash.com/photo-1594833202476-c23f12443657?q=80&w=600&auto=format&fit=crop"
-    },
-    {
-        "id": 2,
-        "name": "Palma Chilena",
-        "scientific_name": "Jubaea chilensis",
-        "description": "La palma más austral del mundo. Es endémica de Chile central y puede vivir más de 1000 años. Destaca por su tronco liso y grisáceo.",
-        "image_url": "https://images.unsplash.com/photo-1545648589-32219468e27c?q=80&w=600&auto=format&fit=crop"
-    },
-    {
-        "id": 3,
-        "name": "Alerce",
-        "scientific_name": "Fitzroya cupressoides",
-        "description": "Uno de los árboles más longevos del mundo. Crece en la selva valdiviana y es una especie protegida por su lenta regeneración.",
-        "image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76aeed?q=80&w=600&auto=format&fit=crop"
-    },
-    {
-        "id": 4,
-        "name": "Quillay",
-        "scientific_name": "Quillaja saponaria",
-        "description": "Árbol endémico de la Zona Central. Su corteza es utilizada para fabricar jabones (de ahí su nombre saponaria) y tiene usos medicinales.",
-        "image_url": "https://input.uchile.cl/wp-content/uploads/2020/10/quillay-1-1024x639.jpg"
-    },
-    {
-        "id": 5,
-        "name": "Copihue (Enredadera)",
-        "scientific_name": "Lapageria rosea",
-        "description": "Aunque es una enredadera y no un árbol, es la flor nacional de Chile. Crece en los bosques templados del centro y sur.",
-        "image_url": "https://images.unsplash.com/photo-1626207191763-79d266e1d2c6?q=80&w=600&auto=format&fit=crop"
-    }
+﻿trees = [
+    {"id": 1, "name": "Peumo", "scientific_name": "Cryptocarya alba", "description": "Árbol nativo de hojas perennes, muy común en la zona central. Sus frutos rojos son alimento para aves.", "image_url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=600"},
+    {"id": 2, "name": "Quillay", "scientific_name": "Quillaja saponaria", "description": "Árbol endémico de Chile central. Su corteza contiene saponinas naturales usadas como jabón.", "image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76aeed?q=80&w=600"},
+    {"id": 3, "name": "Boldo", "scientific_name": "Peumus boldus", "description": "Árbol aromático endémico de Chile. Sus hojas se usan en infusiones medicinales.", "image_url": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600"},
+    {"id": 4, "name": "Litre", "scientific_name": "Lithraea caustica", "description": "Árbol nativo que puede causar dermatitis al contacto en personas sensibles.", "image_url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=600"},
+    {"id": 5, "name": "Maitén", "scientific_name": "Maytenus boaria", "description": "Árbol de ramas colgantes como sauce. Crece cerca de cursos de agua.", "image_url": "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?q=80&w=600"},
+    {"id": 6, "name": "Tevo", "scientific_name": "Retanilla trinervia", "description": "Arbusto espinoso nativo de la zona costera. Muy resistente al viento marino.", "image_url": "https://images.unsplash.com/photo-1464297162577-f5295c892194?q=80&w=600"},
+    {"id": 7, "name": "Colliguay", "scientific_name": "Colliguaja odorifera", "description": "Arbusto aromático de hojas pequeñas. Común en laderas secas.", "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600"},
+    {"id": 8, "name": "Espino", "scientific_name": "Acacia caven", "description": "Arbusto muy espinoso. Flores amarillas aromáticas.", "image_url": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=600"},
+    {"id": 9, "name": "Maqui", "scientific_name": "Aristotelia chilensis", "description": "Arbusto de frutos morados comestibles, ricos en antioxidantes.", "image_url": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=600"},
+    {"id": 10, "name": "Arrayán", "scientific_name": "Luma apiculata", "description": "Arbusto de corteza canela que se desprende. Flores blancas aromáticas.", "image_url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=600"},
+    {"id": 11, "name": "Añañuca", "scientific_name": "Rhodophiala rhodolirion", "description": "Flor bulbosa de color rojo intenso. Florece después de las primeras lluvias.", "image_url": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=600"},
+    {"id": 12, "name": "Suspiro de Campo", "scientific_name": "Nothoscordum gracile", "description": "Pequeña flor blanca estrellada. Muy común en praderas costeras.", "image_url": "https://images.unsplash.com/photo-1463852247062-1bbca38f7805?q=80&w=600"},
+    {"id": 13, "name": "Huilli", "scientific_name": "Leucocoryne ixioides", "description": "Flor nativa de pétalos celestes o blancos. Muy aromática.", "image_url": "https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=600"},
+    {"id": 14, "name": "Alstroemeria", "scientific_name": "Alstroemeria ligtu", "description": "Flor nativa de colores variados. Muy popular en jardines.", "image_url": "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=600"},
+    {"id": 15, "name": "Doca", "scientific_name": "Carpobrotus aequilaterus", "description": "Planta suculenta rastrera. Común en dunas costeras.", "image_url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=600"},
+    {"id": 16, "name": "Quisco", "scientific_name": "Echinopsis chiloensis", "description": "Cactus columnar nativo de Chile. Puede alcanzar 8 metros de altura.", "image_url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=600"},
+    {"id": 17, "name": "Copao", "scientific_name": "Eulychnia acida", "description": "Cactus columnar. Frutos ácidos comestibles llamados 'rumpa'.", "image_url": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=600"},
+    {"id": 18, "name": "Puya", "scientific_name": "Puya chilensis", "description": "Planta suculenta gigante de la familia de las bromelias. Endémica de Chile.", "image_url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=600"},
+    {"id": 19, "name": "Chagual", "scientific_name": "Puya venusta", "description": "Bromelia nativa de hojas espinosas en roseta. Flores rosadas o moradas.", "image_url": "https://images.unsplash.com/photo-1464297162577-f5295c892194?q=80&w=600"},
+    {"id": 20, "name": "Cactus Candelabro", "scientific_name": "Browningia candelaris", "description": "Cactus ramificado que parece un candelabro. Común en zonas áridas costeras.", "image_url": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=600"}
 ]
